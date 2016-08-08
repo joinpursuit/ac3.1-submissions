@@ -9,9 +9,8 @@ $(document).ready(function() {
     	}
     })
     	
-})
-    
 
+   
     //Step 2: Checkbox genre filters
  //    $("input:checkbox").change(function(){
  //    	if ($("#animation").prop('checked')) {
@@ -40,7 +39,10 @@ $(document).ready(function() {
     
 
  //    // Step 3: Text box year filter
-    $('form').submit(function (event) { event.preventDefault(); })
+  
+    $('form').submit(function (event) { 
+    	event.preventDefault(); 
+    });
 
  //    $("#year").keyup(function(){
  //    	var userYear = parseInt($("#year").val());
@@ -61,8 +63,8 @@ $(document).ready(function() {
 
 
 //     Step 4: Both filters together
-  	$('input').bind('keyup change', function (event) {
-  		var userYear = parseInt($("input:year").val())
+ 	$('input').bind('keyup change', function (event) {
+  		var userYear = parseInt($("#year").val());
 
   		if (isNaN(userYear)) {
     		userYear = 0
@@ -71,10 +73,10 @@ $(document).ready(function() {
   		$('div.movie').each(function () {
 
       	var movieYear = parseInt($(this).find('dd.year').html())
-      	var movieGenre = parseInt($(this).find('dd.genre').html())
+      	var movieGenre = $(this).find('dd.genre').html()
       	var checked = $('input#'+movieGenre).prop('checked')
 
-      	if(movieYear > userYear && checked == true) {
+      	if(movieYear > userYear && checked) {
       		$(this).show()
       	} else {
       		$(this).hide()
@@ -83,3 +85,4 @@ $(document).ready(function() {
   	})
 
  	});
+});
