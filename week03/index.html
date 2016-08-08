@@ -4,18 +4,29 @@
     <title>Week 3, Homework</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="main.js" defer></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
 
   <body>
 
     <div class="user-controls">
+    <form id='forminputs'>
+    	  Animation: <input id="animation" type="checkbox" name="animation" />
+
+    	  Action: <input id="action" type="checkbox" name="action" />
+
+    	  Drama: <input id="drama" type="checkbox" name="drama" />
+
+    	    Year: <input id="year" type="text" name="year" />
+
+    </form>
     </div>
 
-    <div id="frame" class="big">
+    <div id="frame" class="small">
 
       <div class="movie animation">
 	<h1 class="name">Minions</h1>
