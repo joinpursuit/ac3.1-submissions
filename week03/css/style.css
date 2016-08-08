@@ -74,21 +74,63 @@ dd.year:after {
 
 .movie .description {
     padding: 5px;
-    background-color: #ddd;
+    background-color: #00F0F8FF;
+}
+
+.user-controls {
+    color: white;
+    text-shadow: -1px 0 #534220, 0 1px #534220, 1px 0 #534220, 0 -1px #534220;
 }
 
 /*
   Use the following for genre-specific styling. For example, maybe
   use a different border color or background color for each genre.
   */
+body {
+    font-family: helvetica, sans-serif;
+    background-image: url('http://en.mallofsofia.bg/uploads/story/14/thumbs/background_theatre_background.png');
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+
 .animation {
+    text-shadow: -1px 0 #534220, 0 1px #534220, 1px 0 #534220, 0 -1px #534220;
     border-color: #fcc;
+    border-style: dashed;
+    font-family: 'Reem Kufi';
+    color: #BFBFBF;
+    background-image: url('http://24.media.tumblr.com/tumblr_mbqmmibMxe1qb8i73o1_500.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
 }
 
 .action {
-    border-color: #33c;
+    text-shadow: -1px 0 #534220, 0 1px #534220, 1px 0 #534220, 0 -1px #534220;
+    border-color: #bb0a1e;
+    font-family: 'Bungee Inline';
+    color: #bb0a1e;
+    background-image: url('http://i.imgur.com/KV2dKW7.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
 }
 
 .drama {
-    border-color: #3f3;
+    border-color: #be7e74;
+    border-style: dotted;
+    font-family: 'Uncial Antiqua';
+    color: #be7e74;
+    text-shadow: -1px 0 #534220, 0 1px #534220, 1px 0 #534220, 0 -1px #534220;
+    background-image: url('https://lh3.googleusercontent.com/-WiWqtJEJLag/VMAOoXty09I/AAAAAAAAAto/ZDuziU-SLSQ/w630-h340-no/shin.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
 }
