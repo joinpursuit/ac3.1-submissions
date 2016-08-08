@@ -4,7 +4,7 @@
     <title>Week 3, Homework</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="hw3.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -12,10 +12,21 @@
 
   <body>
 
-    <div class="user-controls">
+    <div id = moviegenretoggle class="user-controls">
+    <form>
+    	 Action: <input id="action" type="checkbox" name="animation" checked />
+    	 Animation: <input id="animation" type="checkbox" name="animation" checked />
+    	 Drama: <input id="drama" type="checkbox" name="animation" checked />
+    </form>
     </div>
 
-    <div id="frame" class="big">
+    <div id="moviereleaseyearinput" class="user-controls">
+    <form>
+    	  Year: <input id="year" type="text" name="year" />
+    </form>
+    </div>
+
+    <div id="frame" class="small">
 
       <div class="movie animation">
 	<h1 class="name">Minions</h1>
