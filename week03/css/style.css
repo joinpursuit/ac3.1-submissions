@@ -92,3 +92,21 @@ dd.year:after {
 .drama {
     border-color: #3f3;
 }
+
+
+
+
+.user-controls{
+    background: yellow;
+    padding: 10px;
+    margin: 0 35%;
+}
+
+#year{
+    margin: 0 35%;
+    height: 20px;
+    width: 150px;
+    background-color: transparent;
+    position: relative;
+    margin-top: -23px;
+}
