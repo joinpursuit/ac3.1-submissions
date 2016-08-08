@@ -1,22 +1,35 @@
 
+
+
 $(document).ready(function() {
 
-    // Step 1: Dynamic resize
+    $(window).resize(function(){
+    	window.innerWidth > 500 ? $('#frame').removeClass('small').addClass('big') :$('#frame').removeClass('big').addClass('small')
+    })
 
 
-
-    // Step 2: Checkbox genre filters
-
-
-
-    // Step 3: Text box year filter
     $('form').submit(function (event) { event.preventDefault(); })
 
 
+    $('input').bind('keyup change', function (event) {
+    	//event.preventDefault();
 
-    // Step 4: Both filters together
+    	var userYear = parseInt($('input#year').val());
+    	
+    	if (isNaN(userYear)) userYear = 0;
+
+    	$('div.movie').each(function () {
+
+        	var movieYear = parseInt( $(this).find('dd.year').html() );
+        	var movieGenre = $(this).find('dd.genre').text();
+        	var checked = $('input#' + movieGenre).prop('checked');
+
+      		((movieYear > userYear) && checked) ? $(this).show() : $(this).hide();
+
+  		})
+  
+  	})
 
 
 
 });
-
