@@ -4,20 +4,35 @@
     <title>Week 3, Homework</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
 
   <body>
 
     <div class="user-controls">
+	    <form>
+	    	<input id="animation" type="checkbox" name="animation" checked  /><span>Animation</span>
+	    	<input id="action" type="checkbox" name="action" checked /><span>Action</span>
+	    	<input id="drama" type="checkbox" name="drama" checked /><span>Drama</span>
+	    	<input id="year" type="text" name="year" placeholder="Year" />
+	    </form>
+	    
+	    <form class="update">
+	    	<input type="text" class = "newTitle" name="" placeholder="title">
+	    	<input type="text" class = "newGenre" name="" placeholder="Genre">
+	    	<input type="text" class = "newDate" name="" placeholder="date">
+	    	<input type="text" class = "newCast" name="" placeholder="cast">
+	    	<input type="text" class = "newPlot" name="" placeholder="description">
+	    	<input type="button" class="submitButton">
+
+	    </form>
     </div>
 
     <div id="frame" class="big">
 
-      <div class="movie animation">
+     <div class="movie animation">
 	<h1 class="name">Minions</h1>
 	<dl>
 	  <dt class="year">Release date:</dt> <dd class="year">2015</dd>
@@ -237,5 +252,6 @@
     </div>
 
 </body>
+
 
 </html>
