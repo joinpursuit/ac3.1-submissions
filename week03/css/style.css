@@ -1,5 +1,7 @@
-
 /* big stuff */
+body{
+    background-image: url("http://bgfons.com/upload/ice_texture3003.jpg")
+}
 
 .big {
     width: 80%;
@@ -74,7 +76,7 @@ dd.year:after {
 
 .movie .description {
     padding: 5px;
-    background-color: #ddd;
+    background-color: #b7e8ef;
 }
 
 /*
@@ -92,3 +94,10 @@ dd.year:after {
 .drama {
     border-color: #3f3;
 }
+
+.user-controls{
+    color: blue;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
