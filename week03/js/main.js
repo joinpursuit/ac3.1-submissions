@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 
   //   // Step 3: Text box year filter
-  //   $('form').submit(function (event) { event.preventDefault(); })
+    $('form').submit(function (event) { event.preventDefault(); })
 
 	 //  	var userYear = parseInt('input').val()
 	 //    $('div.movie').each(function () {
@@ -58,18 +58,22 @@ $(document).ready(function() {
   // })
 
     // Step 4: Both filters together
-$('input').bind('keyup change', function (event) {
-	var userYear = parseInt('input').val()
-	  if (isNaN(userYear)) {
-   		 userYear = 0
-   		 $('div.movie').each(function () {
+$('input').bind('keyup change', function(event) {
+	var userYear = parseInt($('input').val())
+    if (isNaN(userYear)) {
+       userYear = 0
+          }
+ 		 $('div.movie').each(function () {
 
-	 		var movieYear = parseInt( $(this).find('dd.year').html())
-	 		var movieGenre = parseInt( $(this).find('dd.genre').html())
-	 		var checked = $('input#'+movieGenre).prop('checked')
-	 		if(movieYear > userYear &&  checked === true){
+   		var movieYear = parseInt( $(this).find('dd.year').html())
+   		var movieGenre = $(this).find('dd.genre').html()
+   		var checked = $('input#'+ movieGenre).prop('checked')
+   		
+      if(movieYear > userYear &&  checked == true){
        			$(this).show()
-  				}
-  		  })
- 	   })
+           }else{
+              $(this).hide()
+              }
+     })
+})
 })
