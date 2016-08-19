@@ -1,7 +1,14 @@
-
 $(document).ready(function() {
 
     // Step 1: Dynamic resize
+    if ((window).innerWidth() > 500) {
+
+    } else {
+    	((window).innerWidth() < 500)
+    }
+  //   $( window ).resize(function() {
+  // $( "body" ).prepend( "<div>" + $( window ).width() + "</div>" );
+});
 
 
 
