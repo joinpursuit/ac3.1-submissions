@@ -13,6 +13,16 @@
   <body>
 
     <div class="user-controls">
+    	<form>
+    		Animation: <input id="animation" type="checkbox" name="animation" />
+	    	action: <input id="action" type="checkbox" name="action"  />
+	    	drama: <input id="drama" type="checkbox" name="drama" />
+
+    	</form>
+    	<form>
+    		Year: <input id="year" type="text" name="year" />
+    	</form>
+    	
     </div>
 
     <div id="frame" class="big">
@@ -235,7 +245,21 @@
       </div>
 
     </div>
+    <div><h4>Add a new movie to the list: </h4><button type="button" class="addMovie">Add Movie</button>
+	</div>
+    <div class="submit">
 
+    <form class="submitForm">
+    	Title: <input type="text" class="titleFrm" name="title">
+    	Year: <input type="text" class="yearFrm" name="Year">
+    	Genre: <input type="text" class="genreFrm" name="genre">
+    	Cast: <input type="text" class="castFrm" name="cast" placeholder="Enter Actor names separated by commas">
+    	Description: <input type="text" class="descriptionFrm" name="description">
+    	<button type="submit" class="submitBtn">Submit</button>
+
+    </form>
+    </div>
+ 
 </body>
 
 </html>
