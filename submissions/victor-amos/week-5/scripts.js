@@ -1,54 +1,37 @@
-var button1 = document.createElement('button');
-button1.setAttribute('id', 'first-button');
-button1.innerHTML = "Button One";
+var newDiv = document.createElement('div');
+newDiv.classList.add('main-div');
+document.body.appendChild(newDiv);
 
-document.body.appendChild(button1);
+var newP = document.createElement('p');
+newP.innerHTML = 'Hello! This is a test.';
+newDiv.appendChild(newP)
 
-button1.addEventListener('click', function() {
-	console.log('Clicked the first button');
-})
+var newButton = document.createElement('button');
+newButton.innerHTML = 'Click Me';
+newDiv.appendChild(newButton);
 
-button1.addEventListener('click', function() {
-	document.body.style.backgroundColor = 'magenta'
-})
+var secondP = document.createElement('p');
+secondP.innerHTML = 'This is more text!';
+newDiv.appendChild(secondP);
 
+// newP.classList.add('paragraph-text');
+secondP.className = 'paragraph-text';
+newP.className = 'paragraph-text';
 
-var button2 = document.createElement('button');
-button1.setAttribute('id', 'second-button');
-button2.innerHTML = 'Button Two';
+var newOrderedList = document.createElement('ol');
+newDiv.appendChild(newOrderedList);
 
-document.body.appendChild(button2);
-
-button2.addEventListener('click', function() {
-	var newButton = document.createElement('button')
-	newButton.innerHTML = "I'm A New Button"
-	document.body.appendChild(newButton)
-})
-
-var image1 = document.createElement('img');
-image1.src = "https://upload.wikimedia.org/wikipedia/id/thumb/2/2f/1bulbasaur.png/400px-1bulbasaur.png";
-
-document.body.appendChild(image1);
-
-image1.addEventListener('mouseover', function() {
-	image1.src = "https://media.pocketmonsters.net/imageboard/49/13460786920047.gif";
-})
-
-image1.addEventListener('mouseleave', function() {
-	image1.src = "https://upload.wikimedia.org/wikipedia/id/thumb/2/2f/1bulbasaur.png/400px-1bulbasaur.png";
-})
-
-var newUnorderedList = document.createElement('ul');
-document.body.appendChild(newUnorderedList);
-
-console.log(document.getElementsByTagName('ul')[0])
-
-document.getElementsByTagName('ul')[0].addEventListener('click', function(event) {
-	console.log(event.target.innerText + ' was clicked')
-})
-
-for (i = 0; i < 3; i++) {
-	var newListItem = document.createElement('li');
-	newUnorderedList.appendChild(newListItem);
-	newListItem.innerHTML = "List Item";
+for (i = 0; i < 5; i++) {
+	var listItem = document.createElement('li')
+	listItem.className = 'list-item';
+	newOrderedList.appendChild(listItem);
 }
+
+
+
+// newOrderedList.innerHTML = '<li>One</li><li>Two</li><li>Three</li><li>Four</li><li>Five</li>'
+
+// var listItems = document.getElementsByTagName('li');
+
+// listItems.className = 'list-item';
+newOrderedList.className = 'main-list';
