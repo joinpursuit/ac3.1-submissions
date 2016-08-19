@@ -1,9 +1,9 @@
-
 /* big stuff */
 
 .big {
     width: 80%;
     margin: 25px auto;
+    background-color: pink; /*Add to test event was happening*/
 }
 
 .big dl {
@@ -20,6 +20,7 @@
 
 .small {
     width: 100%;
+    background-color: green; /*Add to test event was happening*/
 }
 
 .small h1 {
@@ -91,4 +92,11 @@ dd.year:after {
 
 .drama {
     border-color: #3f3;
+}
+/* CHECKBOXES */
+form {
+    display: inline-block;
+}
+input {
+    padding: 20px;
 }
