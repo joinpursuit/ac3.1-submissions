@@ -44,6 +44,7 @@ function mapStudentsArr(arr){
 
 function makeStudentDirs(arr) {
   arr.forEach(function(student){
+    var newRepo = `${__dirname}/submissions/${student}`;
     fs.mkdir(student);
   })
 }
@@ -70,10 +71,24 @@ function makeWeeklyDirectory(weekNumber, directoryList) {
   });
 }
 
+function makeGitKeeps(weekNumber, directoryList) {
+  var folderPath = `${__dirname}/submissions`;
+  dir.subdirs(folderPath, function(err, subdirs) {
+    if (err) throw err;
+    subdirs.forEach(function(directory){
+      var newFile = `${directory}/week-${weekNumber}/.gitkeep`;
+      fs.writeFile(newFile);
+    })
+  });
+}
+
+// makeStudentDirs(mapStudentsArr(studentsArr));
+
 // getElementsByName('name')FileDirectory(__dirname);
 
-makeWeeklyDirectory(5);
 // console.log(getSubDirectory())
+
+makeGitKeeps(5);
 
 //Make top-level student directories:
 //makeStudentDirs(mapStudentsArr(studentsArr));
