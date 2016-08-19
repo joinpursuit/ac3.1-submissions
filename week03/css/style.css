@@ -1,3 +1,37 @@
+html, body{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top left,#ac00e6, #ff0066, #004d99); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top left,#ff0066,#a64dff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top left,#ff0066,#a64dff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top left,#ff0066,#a64dff); /* Standard syntax */ 
+   /* border: solid 5px;*/
+}
+
+h1{
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.head { 
+    /*border: solid 2px;*/
+ }
+.movie {
+    border: solid 1px;
+    margin: 1px;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poiret One', cursive;
+    color: #cccccc;
+
+}
+
+.movie .description {
+font-family: 'Lobster', cursive;
+font-family: 'Poiret One', cursive;
+
+}
+p  + .description{
+    background-color: white;
+}
 
 /* big stuff */
 
@@ -72,7 +106,7 @@ dd.year:after {
     padding: 5px;
 }
 
-.movie .description {
+.movie.description {
     padding: 5px;
     background-color: #ddd;
 }
@@ -92,3 +126,14 @@ dd.year:after {
 .drama {
     border-color: #3f3;
 }
+
+/* Styling of form tags within div */
+ .usercontrol{
+    border-style: solid 1px;
+    border-color: black;
+  
+ }
+
+
+
+

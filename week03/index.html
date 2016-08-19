@@ -2,18 +2,39 @@
 <html>
   <head>
     <title>Week 3, Homework</title>
+     <!-- GOOGLE FONTS -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster|Poiret+One' rel='stylesheet' type='text/css'>
+
+   <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
 
   <body>
 
-    <div class="user-controls">
+	<!-- Beginng of form tags -->
+    <div class="user-controls" input id="form" type="checkbox" name="form" checked/>
+	
+	<form>
+		Animation:<span> <input id="animation" type="checkbox" name="animation"/></span>
+
+		Action:<span><input id="action" type="checkbox" name="action"/></span>
+
+		Drama:<span><input id="drama" type="checkbox" name="drama"/></span>
+
+		Year:<span><input id="year" type="text" name="year"/></span>
+
+	</form>
+
     </div>
+ 	<!-- Ending of form tags  -->
 
     <div id="frame" class="big">
 
