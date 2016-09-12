@@ -1,0 +1,183 @@
+
+body{
+  background: #000;
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+
+}
+
+.container{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  height: 15%;
+  color: white;
+}
+
+
+.navbar1{
+  font-size: 40px;
+  font-weight: bolder;
+   -webkit-text-stroke-width: 1px;
+   margin-bottom: 15px; 
+}
+
+.fa-file-video-o{
+  margin-right: 15px;
+}
+
+.navbar2{
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+}
+
+.ran, .sea, .roll{
+  width: 200px;
+  padding: 0;
+  text-align: center;
+  margin-right: 6px; 
+}
+
+#random::after, 
+#scroll::after, 
+#search::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 5px;
+  position: relative;
+  top: 0;
+}
+
+#random:hover::after, 
+#scroll:hover::after, 
+#search:hover::after {
+  top: -40px;
+  transition: all .2s linear;
+}
+
+#random, #random:active{
+  color: #65FFF6;
+}
+
+#random::after{
+  background: #65FFF6;
+}
+
+#scroll, #random:active{
+  color: #FFDD25;
+}
+
+#scroll::after{
+  background: #FFDD25;
+}
+
+#search, #search:active{
+  color: #FF7EEA;
+}
+#search::after{
+  background: #FF7EEA;
+}
+
+a {
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.gifs{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.gifs div {
+  width: 33%;
+  height: auto;
+  margin: 1px;
+}
+
+
+.gifs img {
+  width: 100%;
+  height: 100%;
+}
+form{
+  margin: 0;
+}
+
+form{
+  display: flex;
+  align-items: flex-start;
+}
+
+input{
+  width: 84%;
+  height: 50px;
+  margin: 0;
+  padding-left: 20px;
+  border: none;
+  font-size: 24px;
+}
+
+button{
+  width: 15%;
+  height: 52px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+} 
+
+.fa-search{
+  color: #000;
+}
+
+h3{
+  font-size: 36px;
+  color: white;
+}
+
+.hide{
+  display: none;
+}
+
+.current{
+  display: block;
+}
+
+section{
+  display: flex;
+  align-items: center;
+}
+
+section div{
+  width: 100%;
+  height: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+section div img {
+margin: 0 auto;
+width: 100%;
+}
+
+
+
+
