@@ -1,0 +1,91 @@
+
+
+
+.btn{
+	height:50px;
+	font-family:impact;
+
+}
+
+.tennis{
+	background-color: gold;
+	border:solid black 2px;
+
+}
+
+.basketball{
+	background-color: silver;
+	width:1000px;
+	border:solid black 2px;
+		position: relative;
+			top:-1000px;
+
+
+
+}
+
+.football{
+	background-color: purple;
+	width:1100px;
+	border:solid black 2px;
+	position: relative;
+	top:-1000px;
+
+	
+}
+#serena{
+	position:relative;
+	top:-2000px;
+		border-radius: 10%;
+
+
+}
+#simone{
+	position:relative;
+	top:-2000px;
+	border-radius: 10%;
+	height:450px;
+}
+.rightspike{
+	/*height*/:1000px;
+	background-color: red;
+	width:50px;
+	position:relative;
+	/*top:px;*/
+	left:-100px;	
+}	
+
+
+.leftpurp{
+	height:1000px;
+	background-color: purple;
+	width:50px;
+	position:relative;
+	/*top:px;*/
+	left:53px;	
+}	
+.rightpurp{
+	height:1000px;
+	background-color: purple;
+	width:50px;
+	position:relative;
+	top:-1068px;
+	left:1350px;	
+}	
+html {
+  background-image: url('back.jpg');
+}
+
+.borders{
+	border:black solid 2px;
+}
+.left{
+	background-color: black;	
+	width:10px;
+	height:100px;
+}
+
+.right{
+	background-color: black;	
+	height:500px;
+}
