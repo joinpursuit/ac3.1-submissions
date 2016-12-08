@@ -1,0 +1,60 @@
+var button = document.createElement("button");
+document.body.appendChild(button);
+
+
+document.getElementsByTagName("button")[0].setAttribute("id", "first-button");
+document.body.appendChild(button)
+
+document.getElementById('first-button').addEventListener('click', function(){
+	console.log("Clicked the first button")
+})
+
+
+document.getElementById('first-button').addEventListener('click', function(){
+	this.style.backgroundColor = "magenta";
+})
+
+
+var button2 = document.createElement("button");
+document.body.appendChild(button2);
+
+
+document.getElementsByTagName("button")[1].setAttribute("id", "second-button");
+document.body.appendChild(button)
+
+
+
+// Add a 'second-button' id to your button element
+document.getElementById('second-button').addEventListener('click', function(){
+var button3 = document.createElement("button");
+	document.body.appendChild(button3);
+})
+
+// add an image
+var elem = document.createElement("img");
+elem.setAttribute("src","https://fanart.tv/fanart/tv/74796/tvposter/bleach-53c591ac35f9a.jpg");
+elem.setAttribute("height", "400");
+elem.setAttribute("width", "400");
+document.body.appendChild(elem);
+
+
+
+//When you stop hovering over the image, the image should change back to the original image.
+
+document.getElementById('elm').addEventListener('mouseover', function(){
+function mouseOver() {
+    document.getElementById("elem").src = "https://upload.wikimedia.org/wikipedia/en/1/1e/NC0_DVD1.jpg";
+}
+})
+
+var mainList = document.createElement('ul');
+var child = mainList.appendChild('li')
+document.body.appendChild(mainList);
+
+
+document.getElementsByTagName('ul')[0].addEventListener('click', function(event){
+  console.log(event.target.innerText + ' was clicked')
+})
+
+
+
