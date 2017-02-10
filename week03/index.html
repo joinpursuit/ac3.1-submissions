@@ -7,12 +7,29 @@
     <script src="js/main.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Reem+Kufi|Uncial+Antiqua" rel="stylesheet">
 
   </head>
 
   <body>
 
     <div class="user-controls">
+     <form>
+     	Animation: <input id="animation" type="checkbox" name="animation" checked />
+        Action: <input id="action" type="checkbox" name="action" checked />
+        Drama: <input id="drama" type="checkbox" name="drama" checked />
+		Year: <input id="year" type="text" name="year" />
+     </form>
+     <form id="new-movie">
+     	<h2>Add another movie to the list!</h1>
+     	Title: <input id="title" type="text" name="title" />
+        Genre: <input id="genre" type="text" name="genre" />
+		Year: <input id="newYear" type="text" name="newYear" />
+        Description: <input id="description" type="text" name="description" />
+        Cast: <input id="cast" type="text" name="cast" />
+        <button>Submit</button>
+     </form>
+
     </div>
 
     <div id="frame" class="big">
